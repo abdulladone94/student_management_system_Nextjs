@@ -1,4 +1,7 @@
+import { Announcements } from '@/components/Announcements';
+import BigCalendar from '@/components/BigCalendar';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SingleTeacherPage = () => {
   return (
@@ -104,10 +107,35 @@ const SingleTeacherPage = () => {
           </div>
         </div>
         {/* bottom */}
-        <div>schedule</div>
+        <div className="mt-4 bg-white rounded-md p-4 h-[800px]">
+          <h1>Teacher&apos;s Schedule</h1>
+          <BigCalendar />
+        </div>
       </div>
       {/* right */}
-      <div className="w-full xl:w-1/3">R</div>
+      <div className="w-full xl:w-1/3 flex flex-col gap-4">
+        <div className="bg-white rounded-md p-4">
+          <h1 className="text-xl font-semibold">Shortcuts</h1>
+          <div className="mt-4 flex flex-wrap text-xs gap-4 text-gray-500">
+            <Link href="/" className="p-3 rounded-md bg-zozySkyLight">
+              Teacher&apos;s Classes
+            </Link>
+            <Link href="/" className="p-3 rounded-md bg-zozyPurpleLight">
+              Teacher&apos;s Students
+            </Link>
+            <Link href="/" className="p-3 rounded-md bg-ZozyYellowLight">
+              Teacher&apos;s Lessons
+            </Link>
+            <Link href="/" className="p-3 rounded-md bg-pink-50">
+              Teacher&apos;s Exams
+            </Link>
+            <Link href="/" className="p-3 rounded-md bg-zozySkyLight">
+              Teacher&apos;s Assignments
+            </Link>
+          </div>
+        </div>
+        <Announcements />
+      </div>
     </div>
   );
 };
