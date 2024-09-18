@@ -43,8 +43,65 @@ const SingleTeacherPage = () => {
               </div>
             </div>
           </div>
-          {/* small card */}
-          <div className="flex-1">small card</div>
+          {/* small cards */}
+          <div className="flex-1 flex justify-between flex-wrap gap-4">
+            {/* card */}
+            <div className="p-4 bg-white w-full md:w-[48%] xl:w-[47%] 2xl:w-[48%] gap-4 flex rounded-md">
+              <Image
+                src="/singleAttendance.png"
+                alt="attendance"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+              <div>
+                <h1 className="text-xl font-semibold">90%</h1>
+                <span className="text-sm text-gray-400">Attendance</span>
+              </div>
+            </div>
+            {/* card */}
+            <div className="p-4 bg-white w-full md:w-[48%] xl:w-[47%] 2xl:w-[48%] gap-4 flex rounded-md">
+              <Image
+                src="/singleBranch.png"
+                alt="attendance"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+              <div>
+                <h1 className="text-xl font-semibold">2</h1>
+                <span className="text-sm text-gray-400">Branches</span>
+              </div>
+            </div>
+            {/* card */}
+            <div className="p-4 bg-white w-full md:w-[48%] xl:w-[47%] 2xl:w-[48%] gap-4 flex rounded-md">
+              <Image
+                src="/singleLesson.png"
+                alt="attendance"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+              <div>
+                <h1 className="text-xl font-semibold">6</h1>
+                <span className="text-sm text-gray-400">Lessons</span>
+              </div>
+            </div>
+            {/* card */}
+            <div className="p-4 bg-white w-full md:w-[48%] xl:w-[47%] 2xl:w-[48%] gap-4 flex rounded-md">
+              <Image
+                src="/singleClass.png"
+                alt="attendance"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+              <div>
+                <h1 className="text-xl font-semibold">5</h1>
+                <span className="text-sm text-gray-400">Classes</span>
+              </div>
+            </div>
+          </div>
         </div>
         {/* bottom */}
         <div>schedule</div>
