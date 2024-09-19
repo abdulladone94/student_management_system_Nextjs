@@ -14,7 +14,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/dashboard/list/teachers',
+        destination: '/dashboard/admin',
         permanent: true, // Permanent redirect (status code 308)
       },
     ];
