@@ -10,6 +10,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/dashboard/list/teachers',
+        permanent: true, // Permanent redirect (status code 308)
+      },
+    ];
+  },
 };
 
 export default nextConfig;
