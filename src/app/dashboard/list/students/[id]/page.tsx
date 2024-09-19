@@ -4,7 +4,7 @@ import Performance from '@/components/Performance';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const SingleTeacherPage = () => {
+const SingleStudentPage = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-4 p-4 flex-1">
       {/* left */}
@@ -15,7 +15,7 @@ const SingleTeacherPage = () => {
           <div className="bg-zozySky rounded-md py-6 px-4 gap-4 flex flex-1">
             <div className="w-1/3">
               <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRPWpO-12m19irKlg8znjldmcZs5PO97B6A&s"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRFgM8MLoagyyy3OdqgE6Ok2xz-2WbtsgmSw&s"
                 alt="proPic"
                 width={144}
                 height={144}
@@ -23,9 +23,9 @@ const SingleTeacherPage = () => {
               />
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              <h1 className="text-xl font-semibold">John Bob</h1>
+              <h1 className="text-xl font-semibold">William Smith</h1>
               <p className="text-sm text-gray-500">
-                I'm dedicated individual who helps students learn and grow.
+                I'm dedicated passionate individual who master in Chemistry.
               </p>
               <div className="flex items-center justify-between flex-wrap gap-2 text-xs font-medium">
                 <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
@@ -34,15 +34,15 @@ const SingleTeacherPage = () => {
                 </div>
                 <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                   <Image src="/date.png" alt="date" width={14} height={14} />
-                  <span>December 2024</span>
+                  <span>January 2024</span>
                 </div>
                 <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                   <Image src="/mail.png" alt="mail" width={14} height={14} />
-                  <span>john@gmail.com</span>
+                  <span>smith@gmail.com</span>
                 </div>
                 <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                   <Image src="/phone.png" alt="phone" width={14} height={14} />
-                  <span>+94 771231231</span>
+                  <span>+94 776786786</span>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div>
-                <h1 className="text-xl font-semibold">90%</h1>
+                <h1 className="text-xl font-semibold">80%</h1>
                 <span className="text-sm text-gray-400">Attendance</span>
               </div>
             </div>
@@ -73,8 +73,8 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div>
-                <h1 className="text-xl font-semibold">2</h1>
-                <span className="text-sm text-gray-400">Branches</span>
+                <h1 className="text-xl font-semibold">4th</h1>
+                <span className="text-sm text-gray-400">Grade</span>
               </div>
             </div>
             {/* card */}
@@ -87,7 +87,7 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div>
-                <h1 className="text-xl font-semibold">6</h1>
+                <h1 className="text-xl font-semibold">12</h1>
                 <span className="text-sm text-gray-400">Lessons</span>
               </div>
             </div>
@@ -101,15 +101,15 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div>
-                <h1 className="text-xl font-semibold">5</h1>
-                <span className="text-sm text-gray-400">Classes</span>
+                <h1 className="text-xl font-semibold">6A</h1>
+                <span className="text-sm text-gray-400">Class</span>
               </div>
             </div>
           </div>
         </div>
         {/* bottom */}
         <div className="mt-4 bg-white rounded-md p-4 h-[800px]">
-          <h1>Teacher&apos;s Schedule</h1>
+          <h1>Student&apos;s Schedule</h1>
           <BigCalendar />
         </div>
       </div>
@@ -119,19 +119,19 @@ const SingleTeacherPage = () => {
           <h1 className="text-xl font-semibold">Shortcuts</h1>
           <div className="mt-4 flex flex-wrap text-xs gap-4 text-gray-500">
             <Link href="/" className="p-3 rounded-md bg-zozySkyLight">
-              Teacher&apos;s Classes
+              Student&apos;s Lessons
             </Link>
             <Link href="/" className="p-3 rounded-md bg-zozyPurpleLight">
-              Teacher&apos;s Students
+              Student&apos;s Teachers
             </Link>
             <Link href="/" className="p-3 rounded-md bg-ZozyYellowLight">
-              Teacher&apos;s Lessons
+              Student&apos;s Result
             </Link>
             <Link href="/" className="p-3 rounded-md bg-pink-50">
-              Teacher&apos;s Exams
+              Student&apos;s Exams
             </Link>
             <Link href="/" className="p-3 rounded-md bg-zozySkyLight">
-              Teacher&apos;s Assignments
+              Student&apos;s Assignments
             </Link>
           </div>
         </div>
@@ -142,4 +142,4 @@ const SingleTeacherPage = () => {
   );
 };
 
-export default SingleTeacherPage;
+export default SingleStudentPage;
