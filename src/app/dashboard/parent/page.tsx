@@ -7,7 +7,7 @@ const TeacherPage = () => {
       {/* left */}
       <div className="w-full xl:w-2/3 ">
         <div className="h-full bg-white rounded-md p-4">
-          <h1 className="text-xl font-semibold">Schedule</h1>
+          <h1 className="text-xl font-semibold">Schedule (John Bob)</h1>
           <BigCalendar />
         </div>
       </div>
